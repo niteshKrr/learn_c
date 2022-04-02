@@ -161,7 +161,7 @@ class Content extends StatelessWidget {
               child: const Padding(
                 padding: EdgeInsets.all(3.0),
                 child: Text(
-                  'Go to Chapter 9 \n Structures                                                ',
+                  'Go to Chapter 9 \n Structures                                               ',
                   style: TextStyle(fontSize: 15.0),
                 ),
               ),
@@ -176,7 +176,7 @@ class Content extends StatelessWidget {
               child: const Padding(
                 padding: EdgeInsets.all(3.0),
                 child: Text(
-                  'Go to Chapter 10 \n File I/O                                                      ',
+                  'Go to Chapter 10 \n File I/O                                                     ',
                   style: TextStyle(fontSize: 15.0),
                 ),
               ),
@@ -192,7 +192,7 @@ class Content extends StatelessWidget {
               child: const Padding(
                 padding: EdgeInsets.all(3.0),
                 child: Text(
-                  'Go to Chapter 11 \n Dynamic Memory Allocation                 ',
+                  'Go to Chapter 11 \n Dynamic Memory Allocation                ',
                   style: TextStyle(fontSize: 15.0),
                 ),
               ),
