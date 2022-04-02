@@ -9,7 +9,7 @@ class Introduction extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text("Learn C Programming"),
+          title: const Text("About  C  Programming"),
           // leading: Icon(
           //   Icons.threesixty,
           //   color: Colors.black,

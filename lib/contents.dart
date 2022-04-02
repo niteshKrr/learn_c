@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:learn_c/eights.dart';
-import 'package:learn_c/fifth.dart';
-import 'package:learn_c/first.dart';
-import 'package:learn_c/fourth.dart';
-import 'package:learn_c/nineth.dart';
-import 'package:learn_c/second.dart';
-import 'package:learn_c/seventh.dart';
-import 'package:learn_c/sixth.dart';
-import 'package:learn_c/third.dart';
+import 'package:learn_c/chapters/eights.dart';
+import 'package:learn_c/chapters/eleventh.dart';
+import 'package:learn_c/chapters/fifth.dart';
+import 'package:learn_c/chapters/first.dart';
+import 'package:learn_c/chapters/fourth.dart';
+import 'package:learn_c/chapters/nineth.dart';
+import 'package:learn_c/chapters/second.dart';
+import 'package:learn_c/chapters/seventh.dart';
+import 'package:learn_c/chapters/sixth.dart';
+import 'package:learn_c/chapters/tenth.dart';
+import 'package:learn_c/chapters/third.dart';
 
 class Content extends StatelessWidget {
   const Content({Key? key}) : super(key: key);
@@ -16,111 +18,186 @@ class Content extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Contents"),
-        // leading: Icon(
-        //   Icons.home,
-        //   color: Colors.black,
-        // ),
+        title: const Text("All Contents"),
       ),
-      body: SingleChildScrollView(
-        child: Center(
-          child: Column(
-            children: [
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const FirstChapter()),
-                  );
-                },
-                child: const Text(
-                    'Go to Chapter 1\nVariables , Constants and Keywords'),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const FirstChapter()),
+                );
+              },
+              child: const Padding(
+                padding: EdgeInsets.all(3.0),
+                child: Text(
+                  'Go to Chapter 1\nVariables , Constants and Keywords',
+                  style: TextStyle(
+                    fontSize: 15.0,
+                  ),
+                ),
               ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const SecondChapter()),
-                  );
-                },
-                child:
-                    const Text('Go to Chapter 2 \nInstructions and Operators'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const SecondChapter()),
+                );
+              },
+              child: const Padding(
+                padding: EdgeInsets.all(3.0),
+                child: Text(
+                  'Go to Chapter 2 \nInstructions and Operators                 ',
+                  style: TextStyle(fontSize: 15.0),
+                ),
               ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const ThirdChapter()),
-                  );
-                },
-                child:
-                    const Text('Go to Chapter 3 \n Conditional Instructions'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const ThirdChapter()),
+                );
+              },
+              child: const Padding(
+                padding: EdgeInsets.all(3.0),
+                child: Text(
+                  'Go to Chapter 3 \n Conditional Instructions                     ',
+                  style: TextStyle(fontSize: 15.0),
+                ),
               ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const FourthChapter()),
-                  );
-                },
-                child:
-                    const Text('Go to Chapter 4 \n Loop control Instructions'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const FourthChapter()),
+                );
+              },
+              child: const Padding(
+                padding: EdgeInsets.all(3.0),
+                child: Text(
+                  'Go to Chapter 4 \n Loop control Instructions                   ',
+                  style: TextStyle(fontSize: 15.0),
+                ),
               ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const FifthChapter()),
-                  );
-                },
-                child: const Text('Go to Chapter 5 \n Functions and Recursion'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const FifthChapter()),
+                );
+              },
+              child: const Padding(
+                padding: EdgeInsets.all(3.0),
+                child: Text(
+                  'Go to Chapter 5 \n Functions and Recursion                    ',
+                  style: TextStyle(fontSize: 15.0),
+                ),
               ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const SixChapter()),
-                  );
-                },
-                child: const Text('Go to Chapter 6 \n Pointers'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const SixChapter()),
+                );
+              },
+              child: const Padding(
+                padding: EdgeInsets.all(3.0),
+                child: Text(
+                  'Go to Chapter 6 \n Pointers                                                  ',
+                  style: TextStyle(fontSize: 15.0),
+                ),
               ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const SeventhChapter()),
-                  );
-                },
-                child: const Text('Go to Chapter 7 \n Arrays'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const SeventhChapter()),
+                );
+              },
+              child: const Padding(
+                padding: EdgeInsets.all(3.0),
+                child: Text(
+                  'Go to Chapter 7 \n Arrays                                                      ',
+                  style: TextStyle(fontSize: 15.0),
+                ),
               ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const EighthChapter()),
-                  );
-                },
-                child: const Text('Go to Chapter 8 \n Strings'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const EighthChapter()),
+                );
+              },
+              child: const Padding(
+                padding: EdgeInsets.all(3.0),
+                child: Text(
+                  'Go to Chapter 8 \n Strings                                                     ',
+                  style: TextStyle(fontSize: 15.0),
+                ),
               ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const NinethChapter()),
-                  );
-                },
-                child: const Text('Go to Chapter 9 \n Structures'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const NinethChapter()),
+                );
+              },
+              child: const Padding(
+                padding: EdgeInsets.all(3.0),
+                child: Text(
+                  'Go to Chapter 9 \n Structures                                                ',
+                  style: TextStyle(fontSize: 15.0),
+                ),
               ),
-            ],
-          ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const TenthChapter()),
+                );
+              },
+              child: const Padding(
+                padding: EdgeInsets.all(3.0),
+                child: Text(
+                  'Go to Chapter 10 \n File I/O                                                      ',
+                  style: TextStyle(fontSize: 15.0),
+                ),
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const EleventhChapter()),
+                );
+              },
+              child: const Padding(
+                padding: EdgeInsets.all(3.0),
+                child: Text(
+                  'Go to Chapter 11 \n Dynamic Memory Allocation                 ',
+                  style: TextStyle(fontSize: 15.0),
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );
